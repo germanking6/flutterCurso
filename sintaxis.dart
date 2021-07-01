@@ -250,7 +250,48 @@ abstract class Nadador{
 class Delfin extends Mamifero with Nadador, Volador, Caminante{} 
 
 void main(){
+
   final flipper = new Delfin();
   flipper.nadar();
   flipper.caminar();
+}
+
+
+//futures 
+void main() async {
+
+  print('antes de la peticion');
+
+  httpGet('http://api.nasa.com/aliens')
+    .then((data){
+      print(data);
+    });
+  final nombre = await getNombre("10");
+  print(nombre);
+  getNombre('10').then( (data) => print(data));
+  print('despues de la ejecucion');
+
+}
+
+
+
+
+
+
+Future<String> getNombre(String id) async{
+  return '$id - Fernando';
+}
+
+
+
+
+
+Future httpGet(String url){
+  return Future.delay( Duration( seconds: 3 ), () {
+    return 'Hola Mundo - 3 segundos';
+  } );
+}
+
+Future<String> httpGet(String url){
+  return Future.delay( Duration( seconds: 3 ), ()=>'Hola Mundo - 3 segundos');
 }
