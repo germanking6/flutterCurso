@@ -35,7 +35,7 @@ class _ContadorPageState extends State<ContadorPage>{
       children: <Widget>[
         FloatingActionButton(child: Icon(Icons.undo_outlined),onPressed:(){setState(()=> contador--);},),
         Expanded(child: SizedBox(width:1.0)),
-        FloatingActionButton(child: Icon(Icons.usb),onPressed:()=>reset,),
+        FloatingActionButton(child: Icon(Icons.usb),onPressed:()=>reset(),),
         Expanded(child: SizedBox()),
         FloatingActionButton(child: Icon(Icons.trending_flat),onPressed:(){setState(() {contador++;});}),          
       ],);

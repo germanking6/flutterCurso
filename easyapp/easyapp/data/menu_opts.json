@@ -1,0 +1,40 @@
+{
+    "nombreApp" : "Componentes",
+    "rutas" : [
+        {
+            "ruta" : "alert",
+            "icon" : "add_alert",
+            "texto": "Alertas"
+        },
+        {
+            "ruta" : "avatar",
+            "icon" : "accessibility",
+            "texto": "Avatars"
+        },
+        {
+            "ruta" : "card",
+            "icon" : "folder_open",
+            "texto": "Cards - Tarjetas"
+        },
+        {
+            "ruta" : "animation",
+            "icon" : "add_box_rounded",
+            "texto": "Animation Container"
+        },
+        {
+            "ruta" : "input",
+            "icon" : "add_to_queue_sharp",
+            "texto": "Input page"
+        },
+        {
+            "ruta" : "slider",
+            "icon" : "slideshow",
+            "texto": "Slider page"
+        },
+        {
+            "ruta" : "list",
+            "icon" : "list",
+            "texto": "Lista page"
+        }
+    ]
+}
