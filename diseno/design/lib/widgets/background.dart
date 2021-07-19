@@ -30,8 +30,8 @@ class _PinkBox extends StatelessWidget {
     return Transform.rotate(
       angle: -pi / 5,
       child: Container(
-        width: 300,
-        height: 300,
+        width: 350,
+        height: 350,
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(20),
             gradient: LinearGradient(colors: [
